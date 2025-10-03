@@ -1,0 +1,134 @@
+.headerBg {
+  width: auto;
+  height: auto;
+  /* background: var(--bg-color); */
+  background: linear-gradient(
+    to bottom right,
+
+    var(--btn-color),
+    var(--bg-color)
+  );
+}
+
+.headLogo {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: end !important;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.headerLinks li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bg-text) !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.headerLinks li a:hover {
+  color: var(--btn-color) !important;
+}
+
+.active {
+  color: red !important;
+  font-weight: bold;
+}
+
+.navBtn {
+  width: auto;
+  height: auto;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff !important;
+  background: var(--btn-color);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.navBtn:hover {
+  background: #fff;
+  color: var(--btn-color) !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 24px;
+  color: var(--bg-text);
+}
+
+.close-icon {
+  font-size: 24px;
+  color: red;
+}
+
+.navbar-nav {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Mobile Menu */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .navBtn {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .navLog2 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 487px) and (max-width: 768px) {
+  .headerLinks li a {
+    font-size: 16px;
+  }
+
+  .navBtn {
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+  .headLogo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 486px) {
+  .headerLinks li a {
+    font-size: 13px;
+  }
+  .navBtn {
+    padding: auto;
+    font-size: 14px;
+  }
+  .headLogo {
+    width: 40px;
+    height: 40px;
+  }
+}

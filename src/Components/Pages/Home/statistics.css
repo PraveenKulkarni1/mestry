@@ -1,0 +1,47 @@
+.stisticsBg {
+  width: auto;
+  height: auto;
+  background: var(--bg-color);
+}
+.staticIcon {
+  font-size: 50px;
+  background: var(--btn-bg);
+  font-weight: 600;
+  color: white;
+}
+.statich3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--bg-text);
+  font-size: 22px;
+  font-weight: 600;
+}
+.staticp1 {
+  font-family: "Poppins", sans-serif;
+  color: var(--bg-text);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (min-width: 487px) and (max-width: 768px) {
+  .staticIcon {
+    font-size: 40px;
+  }
+  .statich3 {
+    font-size: 20px;
+  }
+  .staticp1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 486px) {
+  .staticIcon {
+    font-size: 35px;
+  }
+  .statich3 {
+    font-size: 18px;
+  }
+  .staticp1 {
+    font-size: 14px;
+  }
+}
